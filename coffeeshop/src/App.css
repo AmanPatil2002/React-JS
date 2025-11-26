@@ -1,0 +1,139 @@
+.navbar a
+{
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.navbar .active
+{
+  color: orange;
+}
+.btn1:hover
+{
+  background-color: orange !important;
+  border: 2px solid orange !important;
+}
+.bgimg
+{
+  background-image: url('./images/services-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+.bgimg .card
+{
+  background-color: orangered;
+  color: white;
+}
+.bgimg .btn 
+{
+  display: none;
+}
+.bgimg .card:hover
+{
+  background-color: white;
+  color: black;
+}
+.bgimg .card:hover .btn
+{
+  display: block;
+}
+.carousel .carousel-indicators button{
+    background-color: black;
+    height: 15px;
+    width: 70px;
+    border-radius: 50px;
+}
+.carousel .carousel-indicators .active {
+  background-color: orange;
+}
+.carousel .carousel-item{
+  margin-bottom: 50px;
+}
+.bracket-border {
+  position: relative;
+  padding: 20px;
+  border-left: 4px solid black; /* Left bracket border */
+  border-right: 4px solid black; /* Right bracket border */
+}
+
+.bracket-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -4px;
+  height: 2px;
+  width: 200px; /* Length of the top-left bracket */
+  background-color: black;
+}
+
+.bracket-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  height: 2px;
+  width: 200px; /* Length of the bottom-right bracket */
+  background-color: black;
+}
+.bgimg1
+{
+  background-image: url('./images/img-9.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 480px;
+}
+.bgimg1::placeholder{
+    padding-left: 20px !important;
+    font-size: 20px !important;
+}
+.bgimg1 .btn{
+    background-color: orangered !important;
+    border: 2px solid orangered;
+}
+.bgimg1 .btn:hover{
+    background-color: white !important;
+    color: black;
+    border: 2px solid white;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer a:hover{
+  color: orange;
+}
+.gal .card img{
+  height: 300px !important;
+  width: 300px !important;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/* @media (max-width:768px){
+  .navbar a
+  {
+    font-size: 18px;
+  }
+  .bgimg
+  {
+    margin-bottom: 80px;
+    height: 580px;
+  }
+  .bgimg1
+{
+  height: 410px;
+}
+.bgimg1::placeholder{
+    padding-left: 20px !important;
+    font-size: 20px !important;
+}
+}
+
+@media (max-width:428px){
+  
+} */
