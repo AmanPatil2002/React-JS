@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Todoinput from './assets/Todoinput'
 import Tododisplay from './assets/Tododisplay'
@@ -7,7 +7,7 @@ function App() {
   const[todolist,setTodolist]=useState([])
   function addtodo(inputtask){
     console.log(inputtask);
-    setTodolist([...todolist,inputtask])
+    setTodolist([...todolist,inputtask])//spread operator is used to add the new task to the existing list of tasks
     console.log(todolist);
   }
   function deltodo(i){

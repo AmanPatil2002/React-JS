@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 // import styles from './Counter.module.css'
 
 export default function Employee() {
-  const e = useSelector((state) => state.counter.value)
+  const e = useSelector((state) => state.counter.emp) // useSelector is a hook provided by the react-redux library that allows you to extract data from the Redux store state. In this case, it is accessing the 'counter' slice of the state and retrieving the 'emp' property, which is expected to be an array of employee objects.
   const dispatch = useDispatch()
 
   return (

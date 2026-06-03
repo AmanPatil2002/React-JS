@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import { useReducer, useState } from 'react'// useReducer and useState hooks are imported from react library
 
 function Employee() {
     const [id,setId]=useState("")
@@ -6,7 +6,7 @@ function Employee() {
     const [city,setCity]=useState("")
     const [phone,setPhone]=useState("")
     const [state,dispatch]=useReducer(reducer,[{id:1,name:"Aman",city:"Pune",phone:8767426853},])
-    function reducer(state,action)
+    function reducer(state,action) // The reducer function takes the current state and an action as arguments and returns a new state based on the action type.
     {
         switch(action.type)
         {

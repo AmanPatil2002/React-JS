@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit' // createSlice is a function provided by Redux Toolkit that simplifies the process of creating Redux slices. A slice is a collection of Redux reducer logic and actions for a specific feature of your application. It helps to organize your Redux code and reduces boilerplate.
 
 export const counterSlice = createSlice({
   name: 'counter',

@@ -15,10 +15,6 @@ function Header() {
             <Link to="/Product">PRODUCTS</Link>
             <Link to="/Blog">BLOG</Link>
             <Link to="/Singlepost">SINGLE POST</Link>
-            <Link to="/User/AAA">AAA</Link>
-            <Link to="/User/BBB">BBB</Link>
-            <Link to="/User/CCC">CCC</Link>
-            
             <Link to="/Contact">CONTACT</Link>
           </Nav>
         </Container>

@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from '../counterSlice.jsx'
 
@@ -8,19 +7,9 @@ export default function Counter() {
 
   return (
     <div>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          Increment
-        </button>
+        <button aria-label="Increment value" onClick={() => dispatch(increment())}>Increment</button>
         <span>{count}</span>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          Decrement
-        </button>
+        <button aria-label="Decrement value" onClick={() => dispatch(decrement())}>Decrement</button>
     </div>
   )
 }

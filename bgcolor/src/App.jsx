@@ -14,7 +14,6 @@ export default function App() {
           <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"Blue"}} onClick={()=>setColor("Blue")}> Blue </button>
           <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"Green"}} onClick={()=>setColor("Green")} > Green </button>
           <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"Orange"}} onClick={()=>setColor("Orange")} > Orange </button>
-          
         </div>
       </div>
     </div>
