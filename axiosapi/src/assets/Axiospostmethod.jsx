@@ -11,6 +11,7 @@ function Axiospostmethod() {
         })
     }
     function deldata(id){
+        let u={name,email,phone,id}
         axios.delete(`http://jsonplaceholder.typicode.com/users/${u.id}`,JSON.stringify(u)).then((res)=>{
             console.log(res)
         })

@@ -4,10 +4,9 @@ import Dashboard from "./Dashboard"
 
 function PrivateRoute({children}){
 
- const token = localStorage.getItem("token")
+    const token = localStorage.getItem("token")
 
  return token ? children : <Navigate to="/" />
-
 }
 
 function App(){
@@ -17,20 +16,14 @@ function App(){
   <BrowserRouter>
 
    <Routes>
-
     <Route path="/" element={<Login/>} />
-
-    <Route
-     path="/dashboard"
-     element={
+    <Route path="/dashboard" element={
       <PrivateRoute>
        <Dashboard/>
       </PrivateRoute>
      }
     />
-
    </Routes>
-
   </BrowserRouter>
 
  )

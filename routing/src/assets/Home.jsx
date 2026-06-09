@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -18,20 +18,20 @@ function Home() {
           </Col>
         </Row>
         <div className='bg-warning text-white'>
-          <ul class="list-inline p-5 text-center">
-            <li class="list-inline-item p-3">
+          <ul className="list-inline p-5 text-center">
+            <li className="list-inline-item p-3">
               <Link to='/Product' className='text-white'><i className="fa-solid fa-ice-cream fs-1"></i></Link>
               <h5 className='mt-4'>PRODUCT</h5>
             </li>
-            <li class="list-inline-item p-3">
+            <li className="list-inline-item p-3">
               <Link to='/About' className='text-white'><i className="fa-solid fa-hands fs-1"></i></Link>
               <h5 className='mt-4'>OUR STORY</h5>
             </li>
-            <li class="list-inline-item p-3">
+            <li className="list-inline-item p-3">
               <Link to='/Product' className='text-white'><i className="fa-solid fa-droplet fs-1"></i></Link>
               <h5 className='mt-4'>FLAVORS</h5>
             </li>
-            <li class="list-inline-item p-3">
+            <li className="list-inline-item p-3">
               <Link to='/Contact' className='text-white'><i className="fa-solid fa-location-dot fs-1"></i></Link>
               <h5 className='mt-4'>OUR LOCATION</h5>
             </li>
