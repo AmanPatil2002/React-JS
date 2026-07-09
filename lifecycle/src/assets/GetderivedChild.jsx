@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 export default class GetDerivedChild extends Component {
     constructor() {
@@ -7,7 +7,6 @@ export default class GetDerivedChild extends Component {
             qty:0
         };
     }
-
     static getDerivedStateFromProps(props, state) {
         console.log(props,state)
         return {
