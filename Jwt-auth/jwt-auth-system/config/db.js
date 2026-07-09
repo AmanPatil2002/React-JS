@@ -1,11 +1,11 @@
+require('dotenv').config()
+const mysql = require("mysql2");
 
-const mysql = require("mysql2");//import MySQL
-
-const connection = mysql.createConnection({ //create connection to connect to database
-  host: "localhost",
-  user: "root",
-  password: "1234",
-  database: "cinema",
+const connection = mysql.createConnection({
+  host: process.env.DB_host,
+  user:  process.env.DB_user,
+  password:  process.env.DB_password,
+  database:  process.env.DB_name,
 });
 
 connection.connect((err) => {

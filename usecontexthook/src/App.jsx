@@ -3,7 +3,7 @@ import './App.css'
 import Firstchild from './assets/Firstchild.jsx'
 import Secondchild from './assets/Secondchild.jsx'
 
-export const Globinfo=createContext()
+const Globinfo=createContext()
 
 function App() {
   const [tcolor,setTcolor]=useState("purple")

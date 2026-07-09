@@ -5,9 +5,11 @@ import Tododisplay from './assets/Tododisplay'
 
 function App() {
   const[todolist,setTodolist]=useState([])
+
   function addtodo(inputtask){
     console.log(inputtask);
-    setTodolist([...todolist,inputtask])//spread operator is used to add the new task to the existing list of tasks
+    setTodolist([...todolist,inputtask])
+    //spread operator is used to add the new task to the existing list of tasks
     console.log(todolist);
   }
   function deltodo(i){
@@ -17,14 +19,14 @@ function App() {
   }
   return (
     <>
-    <Todoinput addtodo={addtodo}/>
-    {
-      todolist.map((t,i)=>{
-        return(
-          <Tododisplay t={t} index={i} deltodo={deltodo}/>
-        )
-      })
-    }
+      <Todoinput addtodo={addtodo}/>
+      {
+        todolist.map((t,i)=>{
+          return(
+            <Tododisplay key={i} t={t} index={i} deltodo={deltodo}/>
+          )
+        })
+      }
     </>
   )
 }

@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const authenticateToken = require("../middleware/authenticate");//import middleware
-
-const { getAuth,postAuth,checkLogin} = require("../controllers/authController");//import Routes condition
+const authenticateToken = require("../middleware/authenticate");
+const { getAuth,postAuth,checkLogin} = require("../controllers/authController");
 
 router.post("/Register", postAuth);
 

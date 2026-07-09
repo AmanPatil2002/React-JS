@@ -1,12 +1,10 @@
-import React from 'react'
-import { MdDelete } from "react-icons/md";
 
-function Tododisplay(props) {
+function Tododisplay(props) {//pass props
   return (
     <div>
         <li>
             {props.t}
-            <MdDelete style={{color:"red"}} onClick={()=>props.deltodo(props.index)}/>
+            <button onClick={()=>props.deltodo(props.i)}>Delete</button>
         </li>
     </div>
   )

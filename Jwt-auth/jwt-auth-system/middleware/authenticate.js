@@ -1,9 +1,6 @@
-const jwt = require("jsonwebtoken");//Imports the jsonwebtoken library.
+const jwt = require("jsonwebtoken");
 
-const SECRET_KEY = "mysecretkey";
-//This key is used to:
-  // Sign the token during login/registration.
-  // Verify the token when accessing protected routes.
+const SECRET_KEY = process.env.SECRET_KEY;
 
 function authenticateToken(req, res, next) {
   const authHeader = req.headers.authorization;
@@ -17,8 +14,7 @@ function authenticateToken(req, res, next) {
     if (err) {
       return res.sendStatus(403);
     }
-
-    req.user = user;//When token is valid, decoded data is stored in req.user
+    req.user = user;
     next();
   });
 }

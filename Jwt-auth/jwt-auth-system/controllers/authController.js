@@ -1,7 +1,7 @@
-const db = require("../config/db"); //import database connection
-const jwt = require("jsonwebtoken");//Imports the jsonwebtoken library.
+const db = require("../config/db");
+const jwt = require("jsonwebtoken");
 
-const SECRET_KEY = "mysecretkey";
+const SECRET_KEY = process.env.SECRET_KEY;
 
 const getAuth = (req, res) => {
   db.query("SELECT id, email FROM users", (err, result) => {
@@ -14,10 +14,9 @@ const getAuth = (req, res) => {
 };
 
 const postAuth = (req, res) => {
-  const { username,email, password } = req.body;
-  const sql ="INSERT INTO users(username,email, password) VALUES (?, ?, ?)";
-
-  db.query(sql, [username,email, password], (err, result) => {
+  const { username, password } = req.body;
+  const sql ="INSERT INTO users(username, password) VALUES (?, ?)";
+  db.query(sql, [username, password], (err, result) => {
     if (err) {
     console.error(err);
     return res.status(500).json({

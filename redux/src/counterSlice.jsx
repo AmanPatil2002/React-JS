@@ -1,5 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit' // createSlice is a function provided by Redux Toolkit that simplifies the process of creating Redux slices. A slice is a collection of Redux reducer logic and actions for a specific feature of your application. It helps to organize your Redux code and reduces boilerplate.
-
+ // Redux Toolkit allows us to write "mutating" logic in reducers. It
+      // doesn't actually mutate the state because it uses the Immer library,
+      // which detects changes to a "draft state" and produces a brand new
+      // immutable state based off those changes.
+      // Also, no return statement is required from these functions.
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
@@ -8,11 +12,6 @@ export const counterSlice = createSlice({
   },
   reducers: {
     increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes.
-      // Also, no return statement is required from these functions.
       state.value += 1
     },
     decrement: (state) => {

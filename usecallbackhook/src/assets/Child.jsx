@@ -1,9 +1,14 @@
-import { memo } from 'react'
+import { memo } from "react";
 
-function Child() {
-    console.log("Child component called")
+function Child({ qty, display }) {
+  console.log("Child component called");
+
   return (
-    <div>Child Component</div>
-  )
+    <>
+      <h3>Qty: {qty}</h3>
+      <button onClick={display}>Display</button>
+    </>
+  );
 }
-export default memo(Child)
+
+export default memo(Child);
