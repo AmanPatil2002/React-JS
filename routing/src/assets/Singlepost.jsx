@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Slider from "react-slick";
 
 function Singlepost() {
@@ -44,4 +44,4 @@ function Singlepost() {
   )
 }
 
-export default Singlepost
+export default Singlepost
