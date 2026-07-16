@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <h1>React Redux</h1>
-      {/* <Counter /> */}
+      <Counter />
       <Employee/>
       
     </div>
