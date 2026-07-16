@@ -1,9 +1,16 @@
 import axios from 'axios'
+import { useState } from 'react'
 
 function Axiospostmethod() {
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [phone,setPhone]=useState("")
+    function addata(id){
+        let u={name,email,phone,id}
+        axios.post(`http://jsonplaceholder.typicode.com/users/`,JSON.stringify(u)).then((res)=>{
+            console.log(res)
+        })
+    }
     function editdata(id){
         let u={name,email,phone,id}
         axios.put(`http://jsonplaceholder.typicode.com/users/${u.id}`,JSON.stringify(u)).then((res)=>{
